@@ -1,0 +1,147 @@
+.todays_special {
+  height: auto;
+  width: auto;
+  background: var(--Foundation-Black-Darker, #000);
+}
+
+.todays_special .todays_special-content {
+  padding-top: 25px;
+  width: auto;
+  text-align: center;
+}
+
+.todays_special .todays_special-content_header {
+  color: #ffc164;
+  width: auto;
+  height: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.todays_special .todays_special-content_para {
+  width: auto;
+  height: auto;
+  padding-top: 20px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.todays_special-dish_cards {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+
+.todays_special-dish_card {
+  width: 400px;
+  padding-top: 20px;
+  height: fit-content;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.todays_special-dish_card .dish {
+  width: 250px;
+}
+
+.todays_special-dish_card h2 {
+  padding-top: 10px;
+  color: #fff;
+  width: 256px;
+  font-size: 20px;
+}
+
+.todays_special-dish_card p {
+  color: #fff;
+  padding-top: 10px;
+  width: 256px;
+  font-size: 12px;
+}
+
+.todays_special-dish_card .rating {
+  padding-top: 10px;
+  width: 100px;
+}
+
+.todays_special-dish_card .order {
+  width: 100px;
+  margin: 10px;
+  padding: 6px 10px;
+  border-radius: 18px;
+  background: #ff9f0f;
+  box-shadow: 0px 4px 4px 0px #ff9f0f;
+
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .todays_special .todays_special-dish_cards {
+    padding-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+
+    justify-items: center; /* Center horizontally */
+    align-items: center;
+  }
+  .todays_special .todays_special-dish_card {
+    width: 300px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .todays_special .todays_special-content{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .todays_special .todays_special-content_header {
+    font-size: 60px;
+  }
+  
+  .todays_special .todays_special-content_para {
+    font-size: 20px;
+    width: 500px;
+  }
+  
+  .todays_special .todays_special-dish_cards{
+    padding-top: 4rem;
+    width: auto;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .todays_special .todays_special-dish_card {
+    width: 220px;
+    text-align: center;
+  }
+  .todays_special-dish_card .dish {
+    width: 220px;
+  }
+  .todays_special-dish_card h2 {
+    width: 210px;
+    font-size: 18px;
+  }
+  
+  .todays_special-dish_card p {
+    width: 210px;
+    font-size: 12px;
+  }
+}
+

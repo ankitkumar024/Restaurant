@@ -1,0 +1,116 @@
+.story {
+  background-color: #000;
+  max-width: auto;
+  height: 38rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 12%;
+}
+
+.story_text {
+  display: flex;
+  width: auto;
+  height: auto;
+  gap: 15px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.story_text-header {
+  color: #ffc164;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.story_text-para {
+  color: #fff;
+  width: 300px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.story_card {
+  display: flex;
+  flex-direction: column;
+  max-width: auto;
+  align-items: center;
+  padding-top: 30px;
+  gap: 20px;
+}
+
+.story_card img {
+  width: 200px;
+  height: auto;
+}
+
+.story_card-content {
+  display: flex;
+  width: 80%;
+  height: fit-content;
+  flex-direction: column;
+  align-items: end;
+  color: #fff;
+}
+
+.story_card-content p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.story_card-content span {
+  color: #ffc164;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .story_text-header {
+    font-size: 60px;
+  }
+  .story_text-para {
+    width: 520px;
+    font-size: 30px;
+  }
+
+  .story_card {
+    flex-direction: row;
+  }
+
+  .story_card img {
+    width: 400px;
+    height: auto;
+  }
+  .story_card-content p {
+    width: 300px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .story {
+    height: 50rem;
+  }
+  .story_card {
+    width: 1000px;
+    height: auto;
+  }
+
+  .story_card img {
+    width: 500px;
+    height: auto;
+  }
+  .story_card-content p {
+    width: 400px;
+    font-size: 18px;
+  }
+}

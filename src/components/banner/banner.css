@@ -1,0 +1,32 @@
+.banner {
+  max-width: 187rem;
+  max-height: 187rem;
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.banner .banner_img {
+  width: 100%;
+}
+
+.banner .banner_img img {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .banner .banner_img {
+    width: 100%;
+  }
+
+  .banner .banner_img img {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}

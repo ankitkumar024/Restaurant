@@ -1,0 +1,207 @@
+.dining_events {
+  max-width: auto;
+  max-height: auto;
+  padding-top: 10%;
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.dining_events-text {
+  width: auto;
+  height: auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.dining_events-text_header {
+  color: #ffc164;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dining_events-text-para {
+  color: #fff;
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dining_events-btns {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding-top: 15px;
+}
+
+.dining_events-btns .btn.active {
+  background: #ff5c5c;
+  box-shadow: 0px 4px 4px 0px rgba(255, 92, 92, 0.25);
+}
+
+.dining_events-btns .btn {
+  display: flex;
+  padding: 12px 12px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  border-radius: 20px;
+  background: transparent;
+  color: #fff;
+}
+
+.dining_events-btns .btn:hover {
+  background: #ff5c5c;
+  box-shadow: 0px 4px 4px 0px rgba(255, 92, 92, 0.25);
+}
+
+.dining_events-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+.dining_events-cards-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: auto;
+  max-height: auto;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.dining_events-cards-card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.dining_events-cards-card img {
+  width: 60%;
+  height: 60%;
+}
+
+.dining_events-cards-card h2 {
+  width: auto;
+  height: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dining_events-cards-card p {
+  width: 250px;
+  text-align: center;
+  height: auto;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dining_events-cards-card span {
+  color: #ffc164;
+}
+
+@media screen and (min-width: 768px) {
+  .dining_events {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dining_events-cards {
+    display: flex;
+    gap: 50px;
+  }
+
+  .dining_events-cards-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .dining_events-cards-card.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .dining_events-cards-card img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dining_events {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dining_events-text_header {
+    font-size: 60px;
+  }
+
+  .dining_events-text-para {
+    padding-top: 30px;
+    font-size: 30px;
+  }
+
+  .dining_events-btns {
+    display: flex;
+    gap: 40px;
+    padding-top: 4%;
+  }
+
+  .dining_events-btns .btn {
+    display: flex;
+    padding: 14px 12px;
+  }
+  .dining_events-cards {
+    padding-top: 4%;
+  }
+  
+  .dining_events-cards-card {
+    display: flex;
+    max-width: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .dining_events-cards-card img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .dining_events-cards-card h2 {
+    font-size: 50px;
+  }
+
+  .dining_events-cards-card p {
+    width: 400px;
+    height: auto;
+    font-size: 18px;
+  }
+
+  .dining_events-cards-card span {
+    font-size: 30px;
+  }
+}
